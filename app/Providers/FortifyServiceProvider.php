@@ -16,7 +16,7 @@ use Illuminate\Contracts\Auth\StatefulGuard;
 use App\Actions\Fortify\AttemptToAuthenticate;
 use App\Actions\Fortify\RedirectIfTwoFactorAuthenticatable;
 use App\Http\Controllers\AdminController;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class FortifyServiceProvider extends ServiceProvider
 {
