@@ -59,7 +59,7 @@ Route::prefix('admin/')->name('admin.')->group(function () {
             return view('admin.auth.reset-password', ['request' => $request]);
         })->name('password.reset');
     });
-
+    
     Route::post('/login', [AuthenticatedSessionController::class, 'store'])
         ->middleware(array_filter([
             'guest:' . config('fortify.guard'),
