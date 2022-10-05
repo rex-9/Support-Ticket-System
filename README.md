@@ -1,53 +1,68 @@
-<h1 align="center"> Multiple Authentication Using Laravel-Jetstream </h1>
+# Support Ticket System
 
-## About Multi-Auth
+> This system providing the ticket system between client and admins.
 
-It's a user based multiple authentication system build using Laravel Jetstream, It has same features of a single user of Jetstream like Login, Register, Email Verification, Forgot Password, Two-Step Verification, API Services, Logout other browser session and delete user etc. for administrator and user as well. 
+## Built With
 
-## Installation
-- Download this project and extract it.
-- Open Command Prompt and Type **Composer Install** and then **npm install && npm run dev**
-- create a database update **.env** file.
-- Update **Mail Host and Password** for Email Verification.
-- Run **php artisan migrate && php artisan serve** command to see the demo.
+- Laravel
+- Jetstream
+- Livewire
+- TailwindCSS
+- PHP
+- MySQL
+- Vite
 
-## About Author
+## Getting Started
 
-<h1 align="center">Hi 👋, I'm Sk Niyaj Ali</h1>
-<h3 align="center">A passionate frontend and backend developer from India</h3>
-<p align="left"> <a href="https://twitter.com/skniyajali1" target="blank"><img src="https://img.shields.io/twitter/follow/skniyajali1?logo=twitter&style=for-the-badge" alt="skniyajali1" /></a> </p>
+To get a local copy up and running:
 
-- 🔭 I’m currently working on **Needy**
+1. Clone this repository or download the zip folder:
 
-- 👨‍💻 All of my projects are available at [https://github.com/skniyajali/](https://github.com/skniyajali/)
+**`git clone https://github.com/rex-9/Support-Ticket-System.git`**
 
-- 📝 I regularly write articles on [http://niyaj.enhancedteaching.in/](http://niyaj.enhancedteaching.in/)
+2. Navigate to the location of the folder in your machine:
 
-- 💬 Ask me about **laravel, codeignter etc**
+**`you@your-Pc-name:~$ cd Support-Ticket-System`**
 
-- 📫 How to reach me **niyaj320@gmail.com**
+3. Open the project with VScode:
 
-- 📄 Know about my experiences [http://niyaj.enhancedteaching.in/](http://niyaj.enhancedteaching.in/)
+**`code .`**
 
-- ⚡ Fun fact **i think i'm funny**
+4. Install node packages:
 
-### Connect With Me
+**`npm install`**
 
-- **[Codepen.io](https://codepen.io/skniyajali/)**
-- **[Twitter](https://codepen.io/skniyajali/)**
-- **[LinkedIn](https://linkedin.com/in/sk-niyaj-ali-373a94131/)**
-- **[Facebook](https://fb.com/skniyajali7)**
-- **[Instagram](https://instagram.com/_niyajali)**
-- **[Dribbble](https://dribbble.com/skniyajali)**
-- **[Behance.net](https://www.behance.net/skniyajali)**
-- **[medium](https://medium.com/@skniyajali)**
-- **[YouTube](https://www.youtube.com/c/ucjuagdleqbltb_2zvakj-6a)**
-- **[Website](http://niyaj.enhancedteaching.in/)**
+5. Build the node packages:
 
-## Contributing
+**`npm run build`**
 
-Thank you for considering contributing to the Multi-Auth System Using Laravel Jetstream.
+6. Migrate the database:
 
-## License
+**`php artisan migrate`**
 
-The Application is Developed by **[SK NIYAJ ALI](http://niyaj.enhancedteaching.in/)** and it is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7. Start the server:
+
+**`php artisan serve`**
+
+## Rex
+
+👤 - Github: [@rex-9](https://github.com/rex-9/)<br>
+👤 - Medium: [@rex9](https://medium.com/rex9/)<br>
+👤 - LinkedIn: [@rex9](https://www.linkedin.com/in/rex9/)<br>
+👤 - Angelist: [@rex9](https://angel.co/u/rex9)<br>
+👤 - Twitter: [@htetnaing0814](https://www.twitter.com/htetnaing0814)<br>
+👤 - Facebook: [@htetnaing0814](https://www.facebook.com/htetnaing0814)<br>
+
+## 🤝 Contributions
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check [issue page](https://github.com/rex-9/Support-Ticket-System/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+[AGGA.IO](https://www.agga.io)
