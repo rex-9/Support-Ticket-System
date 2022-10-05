@@ -5,14 +5,14 @@ namespace App\Http\Livewire;
 use App\Models\Ticket;
 use Livewire\Component;
 
-class Users extends Component
+class Tickets extends Component
 {
     public $tickets, $ticket_id, $subject, $message, $department;
 
     public function render()
     {
         $this->tickets = Ticket::all();
-        return view('livewire.users');
+        return view('livewire.tickets');
     }
 
     private function resetInputFields()
@@ -26,6 +26,7 @@ class Users extends Component
         $validatedData = $this->validate([
             'subject' => 'required',
             'message' => 'required',
+            'department' => 'required',
         ]);
 
         Ticket::create($validatedData);

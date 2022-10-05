@@ -1,3 +1,0 @@
-<div>
-    Admins dashboard
-</div>

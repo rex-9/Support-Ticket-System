@@ -7,17 +7,7 @@
 
     <div class="py-12">
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            @if (Auth::user()->role == 'user')
-                <div class="overflow-hidden bg-white shadow-xl sm:rounded-lg">
-                    <div class="p-6 bg-white border-b border-gray-200 sm:px-20">
-                        <div class="text-2xl">
-                            @livewire('users')
-                        </div>
-                    </div>
-                </div>
-            @else
-                @livewire('admins')
-            @endif
+            @livewire('tickets')
         </div>
     </div>
 </x-app-layout>
