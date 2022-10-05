@@ -35,4 +35,14 @@ class Tickets extends Component
 
         $this->resetInputFields();
     }
+
+    public function solve($id)
+    {
+        $ticket = Ticket::find($id);
+        $ticket->update([
+            'solved' => true,
+        ]);
+
+        session()->flash('message', 'Ticket Solved Successfully.');
+    }
 }

@@ -25,15 +25,27 @@
             <p class="mb-4 text-lg">{{ $ticket->solved ? 'Solved' : 'Pending' }}</p>
             @if (Auth::user()->role == 'dev' && $ticket->department == 'dev')
                 <div class="flex justify-center w-full">
-                    <x-jet-button>Solve</x-jet-button>
+                    @if ($ticket->solved == false)
+                        <button class="px-4 py-2 bg-yellow-500 rounded-lg" wire:click.prevent="solve({{ $ticket->id }})">Solve</button>
+                    @else
+                        <button class="px-4 py-2 bg-green-500 rounded-lg">Solved</button>
+                    @endif
                 </div>
             @elseif (Auth::user()->role == 'sale' && $ticket->department == 'sale')
-                <div class="flex justify-center w-full">
-                    <x-jet-button>Solve</x-jet-button>
-                </div>
+            <div class="flex justify-center w-full">
+                @if ($ticket->solved == false)
+                    <button class="px-4 py-2 bg-yellow-500 rounded-lg" wire:click.prevent="solve({{ $ticket->id }})">Solve</button>
+                @else
+                    <button class="px-4 py-2 bg-green-500 rounded-lg">Solved</button>
+                @endif
+            </div>
             @elseif (Auth::user()->role == 'admin' && $ticket->department == 'admin')
             <div class="flex justify-center w-full">
-                <x-jet-button>Solve</x-jet-button>
+                @if ($ticket->solved == false)
+                    <button class="px-4 py-2 bg-yellow-500 rounded-lg" wire:click.prevent="solve({{ $ticket->id }})">Solve</button>
+                @else
+                    <button class="px-4 py-2 bg-green-500 rounded-lg">Solved</button>
+                @endif
             </div>
             @endif
         </div>
